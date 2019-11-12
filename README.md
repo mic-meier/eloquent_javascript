@@ -1,7 +1,7 @@
 # Eloquent Javascript Notes and Exercises
 
-1. [Values, Types and Operators](/1_values_and_operators)
-2. [Program Structure](/2_program_structures)
+1. [Values, Types and Operators](./1_values_and_operators)
+2. [Program Structure](./2_program_structures/program_structure.md)
 3. Functions
 4. Data Structures: Objects and Arrays
 5. Higher-order Functions
