@@ -1,4 +1,4 @@
 # Program Structures
 ## Notes
 ## Exercises
-[Loop a Triangle](link)
+[Loop a Triangle](./looping_a_triangle.js)
