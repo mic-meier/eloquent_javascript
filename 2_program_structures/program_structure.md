@@ -21,11 +21,6 @@ Print all the numbers from 1 to 100, except:
 ---
 
 [Chessboard](./chessboard.js)
-Print a chessboard of size `size` consisting of alternating hashes and empty spaces. With `size` set to 4, the chessboard should look like this:
+Print a chessboard of size `size` consisting of alternating hashes and empty spaces.
 
-| |#| | #|
-|#| |#| |
-| |#| |#|
-|#| |#| |
-
- 
+---
