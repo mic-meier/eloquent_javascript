@@ -77,3 +77,40 @@ typeof a; // "object"
 a = [1, 2, 3];
 typeof a; // "object" -- weird, bug
 ```
+
+## Operators
+
+### Arithmetic Operators
+
+- \- (addition)
+- \+ (subtraction)
+- / (division)
+- \* (multiplication)
+- % (modulus/remainder)
+
+These behave as expected.
+
+### Comparison Operators
+
+- < (smaller than)
+- <=(smaller than, or equal to)
+- \> (bigger than)
+- \>= (bigger than, or equal to)
+- == and === (equal to)
+- != and !== (not equal to)
+
+There are some subtle differences between the last two, which will be discussed [here](<!-- TODO: Add link -->).
+
+Comparison of values always evaluates to a Boolean value.
+
+### Logical Operators
+
+- && (Logical AND)
+- || (Logical OR)
+- ! (Logical NOT)
+
+### Ternary Operator
+
+- Boolean ? x : y;
+
+Evaluates a boolean expression on the left of the question mark. If the expression evaluates to true, the middle value will be chosen; if it evaluates to false, the far right value will be chosen.
