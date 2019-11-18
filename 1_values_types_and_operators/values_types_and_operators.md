@@ -47,8 +47,10 @@ These types are available in JavaScript:
   - `Date`
   - `RegExp`
 
-- `Null`
-- `Undefined`
+- `null`
+- `undefined`
+
+`Null` and `undefined` are used to denote the absence of a _meaningful_ value.They are values, but carry no information. They can mostly be treated as interchangeable.
 
 The `typeof` operator examines a value and returns its type (as a string).
 
@@ -82,26 +84,26 @@ typeof a; // "object" -- weird, bug
 
 ### Arithmetic Operators
 
-- \- (addition)
-- \+ (subtraction)
-- / (division)
-- \* (multiplication)
-- % (modulus/remainder)
+- `-` (addition)
+- `+` (subtraction)
+- `/` (division)
+- `*` (multiplication)
+- `%` (modulus/remainder)
 
 These behave as expected.
 
 ### Comparison Operators
 
-- < (smaller than)
-- <=(smaller than, or equal to)
-- \> (bigger than)
-- \>= (bigger than, or equal to)
-- == and === (equal to)
-- != and !== (not equal to)
+- `<` (smaller than)
+- `<=`(smaller than, or equal to)
+- `>` (bigger than)
+- `>=` (bigger than, or equal to)
+- `==` (equal to) and === (_precisely_ equal to)
+- `!=` (not equal to) and !== (_precisely_ not equal to)
 
 There are some subtle differences between the last two, which will be discussed [here](<!-- TODO: Add link -->).
 
-Comparison of values always evaluates to a Boolean value.
+Comparison of values always evaluates to a `Boolean` value.
 
 ### Logical Operators
 
@@ -114,3 +116,43 @@ Comparison of values always evaluates to a Boolean value.
 - Boolean ? x : y;
 
 Evaluates a boolean expression on the left of the question mark. If the expression evaluates to true, the middle value will be chosen; if it evaluates to false, the far right value will be chosen.
+
+## Automatic Type Conversion
+
+When an operator is applied to different types of values, JavaScript will try to convert one value to the type it needs to perform the operation. this process is called _type coercion_.
+
+For example:
+
+```Javascript
+8 * null // -> 0
+7 - "2" // -> 5
+"7" + 2 // -> 72
+"five" * 2 // NaN
+false == "" // true
+
+// When performing comparisons, the == operator allows type coercion, while the === operator does not.
+
+null == undefined // true
+null === undefined // false
+false == "" // true
+false === "" // false
+```
+
+## Short-Circuiting of Logical Operators
+
+The logical operators `&&` and `||` will convert the value on their left side to a `Boolean` in order to decide what to do. Depending on the result of the conversion and the operator used they will either return the original left/hand value or the right/hand value.
+
+The `||` operator returns the left-hand value when that can be evaluated to `true` and returns the right/hand value otherwise.
+
+This can be used as a way to fall back to a default value. For example:
+
+```Javascript
+null || "default" // -> default
+"Bruce Wayne" || "default" // -> Bruce Wayne
+```
+
+When the left-hand side evaluates to `false`, the `&&` operator will return that value and otherwise it returns the right-hand value.
+
+Both of these operators only ever evaluate the right-hand expression if the left-hand expression evaluates to `true`. This is called _short-circuit evaluation_.
+
+The ternary operator behaves the same in that only the expression that gets selected will be evaluated.
