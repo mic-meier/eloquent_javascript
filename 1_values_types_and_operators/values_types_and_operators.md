@@ -52,7 +52,7 @@ These types are available in JavaScript:
 
 `Null` and `undefined` are used to denote the absence of a _meaningful_ value.They are values, but carry no information. They can mostly be treated as interchangeable.
 
-The `typeof` operator examines a value and returns its type (as a string).
+The `typeof` operator examines a value and returns its type (as a string!).
 
 ```javascript
 let a;
