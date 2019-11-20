@@ -46,6 +46,14 @@ Variable names can not start with any numbers, but they can contain them. They c
 
 Additionally there are reserved words in JavaScript that can not be used as variable names. A complete list of these can be found [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar).
 
+
+## Functions
+
+A Function can be thought of as a piece of program that is assigned to a value. They are executed by adding a set of parentheses after the expression that produces a function. Usually a function is executed by adding the parentheses to the variable that holds the function. This is also called calling a function, or invoking a function. The parentheses can contain one or more arguments (values) that are passed into the function.
+
+<!-- TODO: Links to function chapters -->
+More on functions [here](link to function chapter) and [here](link to higher order functions).
+
 ## Exercises
 
 [Loop a Triangle](./looping_a_triangle.js)
