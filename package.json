@@ -1,27 +1,28 @@
 {
-    "name": "eloquent_javascript",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "precommit": "pretty-quick --staged",
-        "postcommit": "git update-index -g",
-        "prettier": "prettier --write \"./**/*.{js,jsx,json}\""
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/mic-meier/eloquent_javascript.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/mic-meier/eloquent_javascript/issues"
-    },
-    "homepage": "https://github.com/mic-meier/eloquent_javascript#readme",
-    "devDependencies": {
-        "eslint": "^6.6.0",
-        "eslint-config-prettier": "^6.5.0",
-        "prettier": "^1.19.1"
-    }
+  "name": "eloquent_javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "pretty-quick --staged",
+    "postcommit": "git update-index -g",
+    "prettier": "prettier --write \"./**/*.{js,jsx,json}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mic-meier/eloquent_javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mic-meier/eloquent_javascript/issues"
+  },
+  "homepage": "https://github.com/mic-meier/eloquent_javascript#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "prettier": "^1.19.1",
+    "acorn": ">=7.1.1"
+  }
 }
