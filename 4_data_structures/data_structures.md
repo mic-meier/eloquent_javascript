@@ -1,6 +1,18 @@
 # Data Structures
 
-## Notes
+## Objects
+
+Values of type object are arbitrary collections of properties. They can be created using the Object() constructor, or more easily using the object initializer / literal syntax.
+
+```Javascript
+// Empty object using Object() constructor
+const myFirstObject = new Object()
+
+// Empty object using literal syntax
+const mySecondObject = {}
+```
+
+Values can be assigned to properties with the `=` operator. This will reaplce the propertiy`s value if the propery alreadz exists, or create a new property if it didn't.
 
 ### Object Properties
 
@@ -46,3 +58,19 @@ myArr.length = 7
 ### Object Methods
 
 Objects can also contain properties that hold function values. These properties are then usually referred to as methods.
+
+### Mutability
+
+TODO
+
+### REST Parameter
+
+TODO
+
+### Destructuring
+
+TODO
+
+## JSON
+
+TODO
